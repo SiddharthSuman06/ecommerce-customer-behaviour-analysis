@@ -4,14 +4,14 @@ A year of real transactions from a UK online retailer: 530,104 line items, 19,96
 
 The most useful thing I learned came from getting something wrong first. More on that below.
 
-![Trading overview](images/1_trading_overview.png)
+![Trading overview](trading_overview.png)
 
 ## What I found
 
 **1. Per order, "guest" orders are bigger than registered ones. Per line item, it's the other way round.**
 My first version compared spend per line item and found registered customers spending 69% more. When I added up each invoice and compared whole orders instead, guest orders averaged GBP 1,229 against GBP 481 (medians GBP 465 vs GBP 303; 95% bootstrap interval for the gap: about GBP 615 to 900).
 
-![Registered vs guest](images/4_registered_vs_guest.png)
+![Registered vs guest](4_registered_vs_guest.png)
 
 The reason is that the two groups are different kinds of buyer:
 
@@ -27,7 +27,7 @@ Registered accounts look like trade customers buying in multiples. Guest orders 
 **2. A handful of foreign accounts place very large orders.**
 Mean order value is about GBP 3,037 for the Netherlands and GBP 2,430 for Australia, against GBP 501 for the UK. But their medians are much lower (GBP 807 and GBP 430), so a few big invoices drive those averages. Japan is consistently high (median GBP 1,607) but only has 19 orders. EIRE is the steadiest international market: 288 orders, median about GBP 650.
 
-![International performance](images/2_international_performance.png)
+![International performance](2_international_performance.png)
 
 **3. Revenue ramps up from September and peaks in November.**
 GBP 1.51M in November 2011, against GBP 0.5 to 0.8M in a typical month. There are no Saturday sales at all, which fits the dataset description saying many customers are wholesalers.
@@ -35,7 +35,7 @@ GBP 1.51M in November 2011, against GBP 0.5 to 0.8M in a typical month. There ar
 **4. The data needs cleaning before any product ranking means anything.**
 Postage is recorded as a product. Two huge orders (80,995 paper craft kits and 74,215 storage jars) were cancelled the same day they were placed. Left in, they push both products into the top 10.
 
-![Product performance](images/3_product_performance.png)
+![Product performance](3_product_performance.png)
 
 ## What I changed in October 2026
 
