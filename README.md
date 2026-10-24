@@ -4,7 +4,7 @@ A year of real transactions from a UK online retailer: 530,104 line items, 19,96
 
 The most useful thing I learned came from getting something wrong first. More on that below.
 
-![Trading overview](trading_overview.png)
+![Trading overview](1_trading_overview.png)
 
 ## What I found
 
